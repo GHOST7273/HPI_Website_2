@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hindustan Packaging Pvt. Ltd.</title>
+    <title>Hindustan Pack-Plast Industries</title>
     <link rel="stylesheet" href="css/Home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="HPI(IMAGES)/logo.png" alt="Hindustan Packaging Logo">
+            <img src="HPI(IMAGES)/Logo.jpg" alt="Hindustan Packaging Logo">
         </div>
         <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         <nav>
@@ -25,9 +26,9 @@
         </nav>
     </header>
     
-    <section class="banner" style="background-image: url('https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+    <section class="banner" style="background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
         <div class="banner-content">
-            <h1>Welcome to Hindustan Packaging Pvt. Ltd.</h1>
+            <h1>Welcome to Hindustan Pack-Plast Industries</h1>
             <p>Your trusted partner in innovative packaging solutions</p>
             <a href="products.html" class="btn">Explore Our Products</a>
         </div>
@@ -104,6 +105,12 @@
         <p>&copy; 2025 Hindustan Packaging Pvt. Ltd. All rights reserved.</p>
     </footer>
 
+    <a href="https://wa.me/919426449619" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="#" class="back-to-top" id="backToTop">↑</a>
+
     <script>
         // Counter Animation
         function animateCounter(counter) {
@@ -136,6 +143,25 @@
             });
         }
 
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
         document.addEventListener("DOMContentLoaded", function() {
             // Initialize counters
             document.querySelectorAll('.counter').forEach(counter => {
@@ -151,7 +177,7 @@
             window.addEventListener('scroll', checkVisibility);
             checkVisibility(); // Initial check
         });
-    </script>  
+    </script>
     <script src="js/menu.js"></script>
 </body>
 </html>
