@@ -361,6 +361,8 @@ footer p {
   @media (max-width: 768px) {
     .menu-toggle {
       display: block;
+      position:absolute;
+      right: 20px;
     }
   
     nav ul {
