@@ -228,54 +228,7 @@ nav ul li a:hover {
     color: #666;
 }
 
-/* Distribution Section */
-.distribution {
-    padding: 80px 20px;
-    text-align: center;
-    background: #f8f9fa;
-}
 
-.distribution h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #004080;
-}
-
-.map-container {
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.india-map {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.dot {
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    background-color: #ff0000;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.dot:hover {
-    transform: scale(1.5);
-}
-
-.global-presence {
-    max-width: 800px;
-    margin: 30px auto 0;
-    font-size: 18px;
-    color: #666;
-    line-height: 1.6;
-}
 
 /* Footer */
 footer {

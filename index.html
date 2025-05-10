@@ -90,17 +90,6 @@
         </div>
     </section>
 
-    <section class="distribution">
-        <h2>Our Distribution Network</h2>
-        <div class="map-container">
-            <img src="https://static.vecteezy.com/system/resources/previews/004/504/536/original/doodle-freehand-drawing-of-india-map-free-vector.jpg" alt="India Distribution Map" class="india-map">
-            <div class="dot" style="top: 30%; left: 40%;" title="Mumbai"></div>
-            <div class="dot" style="top: 40%; left: 50%;" title="Delhi"></div>
-            <div class="dot" style="top: 60%; left: 35%;" title="Bangalore"></div>
-            <div class="dot" style="top: 50%; left: 45%;" title="Kolkata"></div>
-        </div>
-    </section>
-
     <footer>
         <p>&copy; 2025 Hindustan Packaging Pvt. Ltd. All rights reserved.</p>
     </footer>
@@ -112,36 +101,48 @@
     <a href="#" class="back-to-top" id="backToTop">↑</a>
 
     <script>
-        // Counter Animation
-        function animateCounter(counter) {
-            let target = +counter.getAttribute('data-target');
-            let count = 0;
-            let increment = target / 100;
+    // Counter Animation
+    function animateCounter(counter) {
+        let target = +counter.getAttribute('data-target');
+        let count = 0;
+        let increment = target / 100;
 
-            function updateCounter() {
-                if (count < target) {
-                    count += increment;
-                    counter.innerText = Math.ceil(count);
-                    setTimeout(updateCounter, 20);
-                } else {
-                    counter.innerText = target;
-                }
+        function updateCounter() {
+            if (count < target) {
+                count += increment;
+                counter.innerText = Math.ceil(count);
+                setTimeout(updateCounter, 20);
+            } else {
+                counter.innerText = target;
             }
-
-            updateCounter();
         }
 
-        // Fade-in Animation
-        function checkVisibility() {
-            const elements = document.querySelectorAll('.fade-in');
-            elements.forEach(element => {
-                const rect = element.getBoundingClientRect();
-                const isVisible = (rect.top <= window.innerHeight && rect.bottom >= 0);
-                if (isVisible) {
-                    element.classList.add('visible');
-                }
-            });
-        }
+        updateCounter();
+    }
+
+    // Fade-in and Counter Trigger on Scroll
+    function checkVisibility() {
+        const elements = document.querySelectorAll('.fade-in:not(.visible)');
+        elements.forEach(element => {
+            const rect = element.getBoundingClientRect();
+            const isVisible = (rect.top <= window.innerHeight && rect.bottom >= 0);
+            if (isVisible) {
+                element.classList.add('visible');
+
+                // Animate any counters inside this fade-in element
+                const counters = element.querySelectorAll('.counter');
+                counters.forEach(counter => {
+                    if (!counter.classList.contains('animated')) {
+                        animateCounter(counter);
+                        counter.classList.add('animated'); // Ensure it runs only once
+                    }
+                });
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+
 
         // Back to Top Button
         const backToTopButton = document.getElementById('backToTop');
