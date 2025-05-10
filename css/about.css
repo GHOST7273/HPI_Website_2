@@ -253,6 +253,7 @@ footer p {
     header {
         flex-direction: column;
         padding: 15px;
+        height: 108px;
     }
 
     .logo {
@@ -348,7 +349,9 @@ footer p {
   
   @media (max-width: 768px) {
     .menu-toggle {
-      display: block;
+        display: block;
+        position:absolute;
+        right: 20px;
     }
   
     nav ul {
