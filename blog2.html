@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog 2: Sustainability in Practice</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #004080;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logo img {
+            width: 150px;
+            height: auto;
+            object-fit: contain;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a.active, nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .blog-content {
+            max-width: 800px;
+            margin: 60px auto 40px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+            padding: 40px 30px;
+        }
+        .blog-content h1 {
+            color: #004080;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .blog-content p {
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 18px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #004080;
+            text-decoration: none;
+            font-weight: 500;
+            border: 1px solid #004080;
+            padding: 8px 18px;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+        .back-link:hover {
+            background: #004080;
+            color: #fff;
+        }
+        footer {
+            background: #004080;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+        @media (max-width: 768px) {
+            .blog-content {
+                padding: 20px 10px;
+            }
+            header {
+                flex-direction: column;
+                padding: 15px;
+                height: 108px;
+            }
+            .logo {
+                margin-bottom: 15px;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="HPI(IMAGES)/Logo.jpg" alt="HPI Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="blog-content">
+        <h1>Sustainability in Practice</h1>
+        <p>At HPI, sustainability is at the core of our mission. We are dedicated to implementing eco-friendly solutions and reducing our environmental footprint through innovative practices and responsible sourcing.</p>
+        <p>Our team continually explores new ways to make our processes greener, ensuring a better future for generations to come. Join us as we share our journey towards a more sustainable tomorrow.</p>
+        <a class="back-link" href="blog.html">&larr; Back to Blog</a>
+    </div>
+    <footer>
+        <p>&copy; 2025 Hindustan Packaging Pvt. Ltd.All rights reserved.</p>
+    </footer>
+</body>
+</html> 
