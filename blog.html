@@ -1,51 +1,205 @@
-<!-- blog.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog - HPI</title>
-  <link rel="stylesheet" href="css/blog.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Hindustan Pack-Plast Industries</title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div class="logo">
-        <img src="HPI(IMAGES)/Logo.jpg" alt="HPI Logo">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html" class="active">Blog</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section class="blog-list">
-    <h1>Our Blog</h1>
-    <div class="blogs">
-      <a class="blog-card" href="blog1.html">
-        <h2>Blog 1: The Future of HPI</h2>
-        <p>Discover the latest trends and innovations in HPI technology.</p>
-      </a>
-      <a class="blog-card" href="blog2.html">
-        <h2>Blog 2: Sustainability in Practice</h2>
-        <p>How HPI is making a difference in sustainable development.</p>
-      </a>
-      <a class="blog-card" href="blog3.html">
-        <h2>Blog 3: Meet the Team</h2>
-        <p>Get to know the passionate people behind HPI.</p>
-      </a>
-      <a class="blog-card" href="blog4.html">
-        <h2>Blog 4: Customer Success Stories</h2>
-        <p>Read about our clients' journeys and achievements.</p>
-      </a>
-    </div>
-  </section>
-  <footer>
-    <p>&copy; 2025 Hindustan Packaging Pvt. Ltd.All rights reserved.</p>
-  </footer>
+    <header>
+        <div class="logo">
+            <img src="HPI(IMAGES)/logofinal.jpg" alt="Hindustan Packaging Logo">
+        </div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn" aria-haspopup="true" aria-expanded="false" aria-controls="products-dropdown">Products</button>
+                    <ul class="dropdown-content" id="products-dropdown" aria-label="submenu">
+                        <li><a href="products.html#pet-containers">PET CONTAINERS</a></li>
+                        <li><a href="products.html#pet-hinged-boxes">PET HINGED BOXES</a></li>
+                        <li><a href="products.html#pet-bakery-products">PET BAKERY PRODUCTS</a></li>
+                        <li><a href="products.html#pet-punnets">PET PUNNETS</a></li>
+                        <li><a href="products.html#sauce-containers">SAUCE CONTAINERS</a></li>
+                        <li><a href="products.html#containers">CONTAINERS</a></li>
+                        <li><a href="products.html#rectangular-containers">RECTANGULAR CONTAINERS</a></li>
+                        <li><a href="products.html#meal-boxes">MEAL BOXES</a></li>
+                        <li><a href="products.html#lids">LIDS</a></li>
+                        <li><a href="products.html#printed-glasses">PRINTED GLASSES</a></li>
+                        <li><a href="products.html#cornstarch-products">Cornstarch Product's</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner" style="height: 320px; min-height: 220px;">
+        <div class="banner-content">
+            <h1>Our Blog</h1>
+            <p>Insights, Updates & Industry Knowledge</p>
+        </div>
+    </section>
+
+    <section class="blog-content">
+        <div class="blog-intro">
+            <h2>Latest Insights & Updates</h2>
+            <p>Stay informed about the latest trends, innovations, and developments in the packaging industry. Our blog brings you expert insights, company updates, and valuable information about sustainable packaging solutions.</p>
+        </div>
+
+        <div class="blog-grid">
+            <a class="blog-card" href="blog1.html">
+                <div class="blog-image">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div class="blog-text">
+                    <h3>The Future of Sustainable Packaging</h3>
+                    <p>Discover the latest trends and innovations in sustainable packaging technology and how HPI is leading the way in eco-friendly solutions.</p>
+                    <div class="blog-meta">
+                        <span class="blog-date"><i class="far fa-calendar"></i> January 15, 2025</span>
+                        <span class="blog-category"><i class="fas fa-tag"></i> Innovation</span>
+                    </div>
+                </div>
+            </a>
+
+            <a class="blog-card" href="blog2.html">
+                <div class="blog-image">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="blog-text">
+                    <h3>Sustainability in Practice</h3>
+                    <p>How HPI is making a difference in sustainable development and reducing environmental impact through innovative packaging solutions.</p>
+                    <div class="blog-meta">
+                        <span class="blog-date"><i class="far fa-calendar"></i> January 10, 2025</span>
+                        <span class="blog-category"><i class="fas fa-tag"></i> Sustainability</span>
+                    </div>
+                </div>
+            </a>
+
+            <a class="blog-card" href="blog3.html">
+                <div class="blog-image">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="blog-text">
+                    <h3>Meet Our Team</h3>
+                    <p>Get to know the passionate people behind HPI and learn about our commitment to excellence in packaging solutions.</p>
+                    <div class="blog-meta">
+                        <span class="blog-date"><i class="far fa-calendar"></i> January 5, 2025</span>
+                        <span class="blog-category"><i class="fas fa-tag"></i> Team</span>
+                    </div>
+                </div>
+            </a>
+
+            <a class="blog-card" href="blog4.html">
+                <div class="blog-image">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="blog-text">
+                    <h3>Customer Success Stories</h3>
+                    <p>Read about our clients' journeys and achievements, and how our packaging solutions have helped them grow their businesses.</p>
+                    <div class="blog-meta">
+                        <span class="blog-date"><i class="far fa-calendar"></i> January 1, 2025</span>
+                        <span class="blog-category"><i class="fas fa-tag"></i> Success</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <div class="footer-logo-col">
+                <img src="HPI(IMAGES)/logofinal.jpg" alt="Company Logo" class="footer-logo">
+                <p class="footer-desc">Your trusted partner for quality and innovation in packaging solutions. We deliver excellence with every product.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="$">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Building No: F-2</li>
+                    <li>Abhisek Estate-1 </li>
+                    <li>Haripura, Near Asarwa Bridge</li>
+                    <li>Ahmedabad, Gujarat</li>
+                    <li>380016</li>
+                    <li>+91 92272 08586</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hindustan Packaging Pvt. Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919227208586" class="whatsapp-button" target="_blank" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+
+    <script src="js/menu.js"></script>
+    <script>
+        // Dropdown accessibility and mobile toggle
+        const dropbtn = document.querySelector('.dropbtn');
+        const dropdownContent = document.querySelector('.dropdown-content');
+        if (dropbtn && dropdownContent) {
+            dropbtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const expanded = dropbtn.getAttribute('aria-expanded') === 'true';
+                dropbtn.setAttribute('aria-expanded', !expanded);
+                dropdownContent.classList.toggle('show');
+            });
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!dropdownContent.contains(e.target) && !dropbtn.contains(e.target)) {
+                    dropdownContent.classList.remove('show');
+                    dropbtn.setAttribute('aria-expanded', 'false');
+                }
+            });
+            // Close dropdown on link click (mobile)
+            dropdownContent.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function() {
+                    dropdownContent.classList.remove('show');
+                    dropbtn.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+        // Back to Top button functionality
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        backToTop.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>

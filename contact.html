@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Hindustan Packaging Pvt. Ltd.</title>
+    <title>Contact Us - Hindustan Pack-Plast Industries</title>
     <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,25 +13,44 @@
 <body>
     <header>
         <div class="logo">
-            <img src="HPI(IMAGES)/Logo.jpg" alt="Hindustan Packaging Logo">
+            <img src="HPI(IMAGES)/logofinal.jpg" alt="Hindustan Packaging Logo">
         </div>
         <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn" aria-haspopup="true" aria-expanded="false" aria-controls="products-dropdown">Products</button>
+                    <ul class="dropdown-content" id="products-dropdown" aria-label="submenu">
+                        <li><a href="products.html#pet-containers">PET CONTAINERS</a></li>
+                        <li><a href="products.html#pet-hinged-boxes">PET HINGED BOXES</a></li>
+                        <li><a href="products.html#pet-bakery-products">PET BAKERY PRODUCTS</a></li>
+                        <li><a href="products.html#pet-punnets">PET PUNNETS</a></li>
+                        <li><a href="products.html#sauce-containers">SAUCE CONTAINERS</a></li>
+                        <li><a href="products.html#containers">CONTAINERS</a></li>
+                        <li><a href="products.html#rectangular-containers">RECTANGULAR CONTAINERS</a></li>
+                        <li><a href="products.html#meal-boxes">MEAL BOXES</a></li>
+                        <li><a href="products.html#lids">LIDS</a></li>
+                        <li><a href="products.html#printed-glasses">PRINTED GLASSES</a></li>
+                        <li><a href="products.html#cornstarch-products">Cornstarch Product's</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="contact-hero">
-        <h1>Contact Us</h1>
-        <p>Get in touch with our team for any inquiries</p>
+    <section class="banner" style="height: 320px; min-height: 220px;">
+        <div class="banner-content">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our team for any inquiries</p>
+        </div>
     </section>
 
-    <section class="contact-content">
+    <section class="contact-section">
         <div class="contact-info">
             <h2>Our Location</h2>
             <p>Building No: F-2</p>
@@ -91,36 +110,90 @@
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Hindustan Packaging Pvt. Ltd. All rights reserved.</p>
-    </footer>
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <div class="footer-logo-col">
+                <img src="HPI(IMAGES)/logofinal.jpg" alt="Company Logo" class="footer-logo">
+                <p class="footer-desc">Your trusted partner for quality and innovation in packaging solutions. We deliver excellence with every product.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="$">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Building No: F-2</li>
+                    <li>Abhisek Estate-1 </li>
+                    <li>Haripura, Near Asarwa Bridge</li>
+                    <li>Ahmedabad, Gujarat</li>
+                    <li>380016</li>
+                    <li>+91 92272 08586</li>
 
-    <a href="https://wa.me/919227208586" class="whatsapp-button" target="_blank">
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hindustan Packaging Pvt. Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+    <a href="https://wa.me/919227208586" class="whatsapp-button" target="_blank" aria-label="Chat with us on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
-
-    <a href="#" class="back-to-top" id="backToTop">↑</a>
-
-    <script>
-        // Back to Top Button
-        const backToTopButton = document.getElementById('backToTop');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.add('visible');
-            } else {
-                backToTopButton.classList.remove('visible');
-            }
-        });
-
-        backToTopButton.addEventListener('click', (e) => {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
     <script src="js/menu.js"></script>
+    <script>
+// Dropdown accessibility and mobile toggle
+const dropbtn = document.querySelector('.dropbtn');
+const dropdownContent = document.querySelector('.dropdown-content');
+if (dropbtn && dropdownContent) {
+    dropbtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const expanded = dropbtn.getAttribute('aria-expanded') === 'true';
+        dropbtn.setAttribute('aria-expanded', !expanded);
+        dropdownContent.classList.toggle('show');
+    });
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!dropdownContent.contains(e.target) && !dropbtn.contains(e.target)) {
+            dropdownContent.classList.remove('show');
+            dropbtn.setAttribute('aria-expanded', 'false');
+        }
+    });
+    // Close dropdown on link click (mobile)
+    dropdownContent.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function() {
+            dropdownContent.classList.remove('show');
+            dropbtn.setAttribute('aria-expanded', 'false');
+        });
+    });
+}
+// Back to Top button functionality
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+        backToTop.classList.add('visible');
+    } else {
+        backToTop.classList.remove('visible');
+    }
+});
+backToTop.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
 </body>
 </html> 

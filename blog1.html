@@ -3,132 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog 1: The Future of HPI</title>
-    <style>
-        body {
-            background-color: #f5f5f5;
-            color: #333;
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #004080;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .logo {
-            color: #fff;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .logo img {
-            width: 150px;
-            height: auto;
-            object-fit: contain;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 8px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        nav ul li a.active, nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-        .blog-content {
-            max-width: 800px;
-            margin: 60px auto 40px auto;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
-            padding: 40px 30px;
-        }
-        .blog-content h1 {
-            color: #004080;
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        .blog-content p {
-            color: #555;
-            font-size: 18px;
-            margin-bottom: 18px;
-        }
-        .back-link {
-            display: inline-block;
-            margin-top: 30px;
-            color: #004080;
-            text-decoration: none;
-            font-weight: 500;
-            border: 1px solid #004080;
-            padding: 8px 18px;
-            border-radius: 5px;
-            transition: background 0.3s, color 0.3s;
-        }
-        .back-link:hover {
-            background: #004080;
-            color: #fff;
-        }
-        footer {
-            background: #004080;
-            color: white;
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 40px;
-        }
-        @media (max-width: 768px) {
-            .blog-content {
-                padding: 20px 10px;
-            }
-            header {
-                flex-direction: column;
-                padding: 15px;
-                height: 108px;
-            }
-            .logo {
-                margin-bottom: 15px;
-            }
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-            }
-        }
-    </style>
+    <title>The Future of Sustainable Packaging - Hindustan Pack-Plast Industries</title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="HPI(IMAGES)/Logo.jpg" alt="HPI Logo">
+            <img src="HPI(IMAGES)/logofinal.jpg" alt="Hindustan Packaging Logo">
         </div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn" aria-haspopup="true" aria-expanded="false" aria-controls="products-dropdown">Products</button>
+                    <ul class="dropdown-content" id="products-dropdown" aria-label="submenu">
+                        <li><a href="products.html#pet-containers">PET CONTAINERS</a></li>
+                        <li><a href="products.html#pet-hinged-boxes">PET HINGED BOXES</a></li>
+                        <li><a href="products.html#pet-bakery-products">PET BAKERY PRODUCTS</a></li>
+                        <li><a href="products.html#pet-punnets">PET PUNNETS</a></li>
+                        <li><a href="products.html#sauce-containers">SAUCE CONTAINERS</a></li>
+                        <li><a href="products.html#containers">CONTAINERS</a></li>
+                        <li><a href="products.html#rectangular-containers">RECTANGULAR CONTAINERS</a></li>
+                        <li><a href="products.html#meal-boxes">MEAL BOXES</a></li>
+                        <li><a href="products.html#lids">LIDS</a></li>
+                        <li><a href="products.html#printed-glasses">PRINTED GLASSES</a></li>
+                        <li><a href="products.html#cornstarch-products">Cornstarch Product's</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
     </header>
-    <div class="blog-content">
-        <h1>The Future of HPI</h1>
-        <p>Welcome to our first blog post! At HPI, we are committed to driving innovation and excellence in our field. The future holds exciting opportunities as we embrace new technologies and sustainable practices to better serve our clients and the environment.</p>
-        <p>Stay tuned for more updates as we continue to lead the way in our industry, setting new standards and achieving new milestones together.</p>
-        <a class="back-link" href="blog.html">&larr; Back to Blog</a>
-    </div>
-    <footer>
-        <p>&copy; 2025 Hindustan Packaging Pvt. Ltd.All rights reserved.</p>
+
+    <section class="banner" style="height: 320px; min-height: 220px;">
+        <div class="banner-content">
+            <h1>The Future of Sustainable Packaging</h1>
+            <p>Innovation & Eco-Friendly Solutions</p>
+        </div>
+    </section>
+
+    <section class="blog-content">
+        <div class="blog-article">
+            <div class="article-meta">
+                <span class="article-date"><i class="far fa-calendar"></i> January 15, 2025</span>
+                <span class="article-category"><i class="fas fa-tag"></i> Innovation</span>
+                <span class="article-author"><i class="fas fa-user"></i> HPI Team</span>
+            </div>
+            
+            <div class="article-content">
+                <h2>Embracing the Future of Sustainable Packaging</h2>
+                
+                <p>At Hindustan Pack-Plast Industries, we are committed to driving innovation and excellence in sustainable packaging solutions. The future holds exciting opportunities as we embrace new technologies and sustainable practices to better serve our clients and the environment.</p>
+                
+                <h3>The Evolution of Packaging</h3>
+                <p>The packaging industry is undergoing a remarkable transformation, driven by environmental concerns and consumer demand for eco-friendly solutions. Traditional packaging materials are being replaced by innovative, sustainable alternatives that reduce environmental impact while maintaining product integrity.</p>
+                
+                <h3>Our Commitment to Sustainability</h3>
+                <p>HPI has been at the forefront of this revolution, investing in cutting-edge technologies and materials that prioritize environmental responsibility. Our sustainable packaging solutions include:</p>
+                
+                <ul>
+                    <li><strong>Biodegradable Materials:</strong> We utilize plant-based polymers and compostable materials that break down naturally in the environment.</li>
+                    <li><strong>Recycled Content:</strong> Our packaging incorporates post-consumer recycled materials, reducing waste and conserving resources.</li>
+                    <li><strong>Lightweight Design:</strong> Optimized packaging reduces material usage while maintaining strength and functionality.</li>
+                    <li><strong>Renewable Resources:</strong> We source materials from sustainable, renewable sources whenever possible.</li>
+                </ul>
+                
+                <h3>Innovation in Action</h3>
+                <p>Our research and development team continuously explores new materials and manufacturing processes. Recent breakthroughs include:</p>
+                
+                <ul>
+                    <li>Advanced PET containers with enhanced barrier properties</li>
+                    <li>Bio-based polymers for food packaging applications</li>
+                    <li>Smart packaging solutions with embedded sensors</li>
+                    <li>Modular packaging systems for reduced waste</li>
+                </ul>
+                
+                <h3>Looking Ahead</h3>
+                <p>As we move forward, HPI remains committed to:</p>
+                
+                <ul>
+                    <li>Reducing our carbon footprint through sustainable manufacturing</li>
+                    <li>Developing packaging solutions that extend product shelf life</li>
+                    <li>Creating packaging that enhances consumer experience</li>
+                    <li>Collaborating with partners to drive industry-wide change</li>
+                </ul>
+                
+                <p>Stay tuned for more updates as we continue to lead the way in sustainable packaging, setting new standards and achieving new milestones together. The future of packaging is green, and HPI is proud to be at the forefront of this transformation.</p>
+            </div>
+            
+            <div class="article-footer">
+                <a href="blog.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i> Back to Blog
+                </a>
+                <div class="share-buttons">
+                    <span>Share this article:</span>
+                    <a href="#" class="share-btn"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="share-btn"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="share-btn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <div class="footer-logo-col">
+                <img src="HPI(IMAGES)/logofinal.jpg" alt="Company Logo" class="footer-logo">
+                <p class="footer-desc">Your trusted partner for quality and innovation in packaging solutions. We deliver excellence with every product.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="$">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Building No: F-2</li>
+                    <li>Abhisek Estate-1 </li>
+                    <li>Haripura, Near Asarwa Bridge</li>
+                    <li>Ahmedabad, Gujarat</li>
+                    <li>380016</li>
+                    <li>+91 92272 08586</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hindustan Packaging Pvt. Ltd. All rights reserved.</p>
+        </div>
     </footer>
+
+    <a href="https://wa.me/919227208586" class="whatsapp-button" target="_blank" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+
+    <script src="js/menu.js"></script>
+    <script>
+        // Dropdown accessibility and mobile toggle
+        const dropbtn = document.querySelector('.dropbtn');
+        const dropdownContent = document.querySelector('.dropdown-content');
+        if (dropbtn && dropdownContent) {
+            dropbtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const expanded = dropbtn.getAttribute('aria-expanded') === 'true';
+                dropbtn.setAttribute('aria-expanded', !expanded);
+                dropdownContent.classList.toggle('show');
+            });
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!dropdownContent.contains(e.target) && !dropbtn.contains(e.target)) {
+                    dropdownContent.classList.remove('show');
+                    dropbtn.setAttribute('aria-expanded', 'false');
+                }
+            });
+            // Close dropdown on link click (mobile)
+            dropdownContent.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function() {
+                    dropdownContent.classList.remove('show');
+                    dropbtn.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+        // Back to Top button functionality
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        backToTop.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html> 

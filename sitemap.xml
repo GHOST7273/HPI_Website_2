@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.example.com/index.html</loc>
+    <loc>https://www.hindustanpackaging.co.in/index.html</loc>
   </url>
   <url>
-    <loc>https://www.example.com/blog.html</loc>
+    <loc>https://www.hindustanpackaging.co.in/blog.html</loc>
   </url>
   <url>
-    <loc>https://www.example.com/blog1.html</loc>
+    <loc>https://www.hindustanpackaging.co.in/blog1.html</loc>
   </url>
   <url>
-    <loc>https://www.example.com/blog2.html</loc>
+    <loc>https://www.hindustanpackaging.co.in/blog2.html</loc>
   </url>
   <url>
-    <loc>https://www.example.com/blogthree.html</loc>
+    <loc>https://www.hindustanpackaging.co.in/blog3.html</loc>
   </url>
   <url>
-    <loc>https://www.example.com/blog4.html</loc>
+    <loc>https://www.hindustanpackaging.co.in/blog4.html</loc>
+  </url>
+  <url>
+    <loc>https://www.hindustanpackaging.co.in/about.html</loc>
+  </url>
+  <url>
+    <loc>https://www.hindustanpackaging.co.in/products.html</loc>
+  </url>
+  <url>
+    <loc>https://www.hindustanpackaging.co.in/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://www.hindustanpackaging.co.in/sitemap.xml</loc>
   </url>
 </urlset> 

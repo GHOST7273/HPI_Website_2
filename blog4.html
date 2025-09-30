@@ -3,132 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog 4: Customer Success Stories</title>
-    <style>
-        body {
-            background-color: #f5f5f5;
-            color: #333;
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #004080;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .logo {
-            color: #fff;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .logo img {
-            width: 150px;
-            height: auto;
-            object-fit: contain;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 8px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        nav ul li a.active, nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-        .blog-content {
-            max-width: 800px;
-            margin: 60px auto 40px auto;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
-            padding: 40px 30px;
-        }
-        .blog-content h1 {
-            color: #004080;
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        .blog-content p {
-            color: #555;
-            font-size: 18px;
-            margin-bottom: 18px;
-        }
-        .back-link {
-            display: inline-block;
-            margin-top: 30px;
-            color: #004080;
-            text-decoration: none;
-            font-weight: 500;
-            border: 1px solid #004080;
-            padding: 8px 18px;
-            border-radius: 5px;
-            transition: background 0.3s, color 0.3s;
-        }
-        .back-link:hover {
-            background: #004080;
-            color: #fff;
-        }
-        footer {
-            background: #004080;
-            color: white;
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 40px;
-        }
-        @media (max-width: 768px) {
-            .blog-content {
-                padding: 20px 10px;
-            }
-            header {
-                flex-direction: column;
-                padding: 15px;
-                height: 108px;
-            }
-            .logo {
-                margin-bottom: 15px;
-            }
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-            }
-        }
-    </style>
+    <title>Customer Success Stories - Hindustan Pack-Plast Industries</title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="HPI(IMAGES)/Logo.jpg" alt="HPI Logo">
+            <img src="HPI(IMAGES)/logofinal.jpg" alt="Hindustan Packaging Logo">
         </div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn" aria-haspopup="true" aria-expanded="false" aria-controls="products-dropdown">Products</button>
+                    <ul class="dropdown-content" id="products-dropdown" aria-label="submenu">
+                        <li><a href="products.html#pet-containers">PET CONTAINERS</a></li>
+                        <li><a href="products.html#pet-hinged-boxes">PET HINGED BOXES</a></li>
+                        <li><a href="products.html#pet-bakery-products">PET BAKERY PRODUCTS</a></li>
+                        <li><a href="products.html#pet-punnets">PET PUNNETS</a></li>
+                        <li><a href="products.html#sauce-containers">SAUCE CONTAINERS</a></li>
+                        <li><a href="products.html#containers">CONTAINERS</a></li>
+                        <li><a href="products.html#rectangular-containers">RECTANGULAR CONTAINERS</a></li>
+                        <li><a href="products.html#meal-boxes">MEAL BOXES</a></li>
+                        <li><a href="products.html#lids">LIDS</a></li>
+                        <li><a href="products.html#printed-glasses">PRINTED GLASSES</a></li>
+                        <li><a href="products.html#cornstarch-products">Cornstarch Product's</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
     </header>
-    <div class="blog-content">
-        <h1>Customer Success Stories</h1>
-        <p>Our clients are at the heart of everything we do. In this blog, we share inspiring stories of how HPI has helped businesses achieve their goals and overcome challenges through our innovative solutions.</p>
-        <p>We are proud to be a part of our customers' journeys and look forward to creating more success stories together.</p>
-        <a class="back-link" href="blog.html">&larr; Back to Blog</a>
-    </div>
-    <footer>
-        <p>&copy; 2025 Hindustan Packaging Pvt. Ltd.All rights reserved.</p>
+
+    <section class="banner" style="height: 320px; min-height: 220px;">
+        <div class="banner-content">
+            <h1>Customer Success Stories</h1>
+            <p>Real Results from Real Partnerships</p>
+        </div>
+    </section>
+
+    <section class="blog-content">
+        <div class="blog-article">
+            <div class="article-meta">
+                <span class="article-date"><i class="far fa-calendar"></i> January 1, 2025</span>
+                <span class="article-category"><i class="fas fa-tag"></i> Success</span>
+                <span class="article-author"><i class="fas fa-user"></i> HPI Team</span>
+            </div>
+            
+            <div class="article-content">
+                <h2>Celebrating Our Client Success Stories</h2>
+                
+                <p>Read about our clients' journeys and achievements, and how our packaging solutions have helped them grow their businesses. These success stories demonstrate the real impact of quality packaging on business growth and customer satisfaction.</p>
+                
+                <h3>The Bakery Revolution</h3>
+                <p>One of our most inspiring success stories comes from a local bakery chain that transformed their business with our innovative packaging solutions. Facing challenges with product freshness and presentation, they partnered with HPI to develop custom packaging that extended shelf life while enhancing visual appeal.</p>
+                
+                <ul>
+                    <li><strong>Challenge:</strong> Products losing freshness quickly and poor visual presentation</li>
+                    <li><strong>Solution:</strong> Custom PET containers with enhanced barrier properties</li>
+                    <li><strong>Result:</strong> 40% increase in shelf life and 60% improvement in customer satisfaction</li>
+                </ul>
+                
+                <h3>Pharmaceutical Excellence</h3>
+                <p>Our partnership with a leading pharmaceutical company showcases how proper packaging can ensure product integrity and regulatory compliance. We developed specialized containers that met stringent industry standards while maintaining cost-effectiveness.</p>
+                
+                <ul>
+                    <li><strong>Challenge:</strong> Meeting strict pharmaceutical packaging regulations</li>
+                    <li><strong>Solution:</strong> Medical-grade PET containers with tamper-evident features</li>
+                    <li><strong>Result:</strong> 100% regulatory compliance and 25% reduction in packaging costs</li>
+                </ul>
+                
+                <h3>Food Service Innovation</h3>
+                <p>A major food service provider approached us with the challenge of creating sustainable packaging that could withstand high temperatures while maintaining food safety. Our team developed a revolutionary solution that combined durability with environmental responsibility.</p>
+                
+                <ul>
+                    <li><strong>Challenge:</strong> High-temperature food packaging with sustainability requirements</li>
+                    <li><strong>Solution:</strong> Heat-resistant containers made from recycled materials</li>
+                    <li><strong>Result:</strong> 50% reduction in environmental impact and improved food safety</li>
+                </ul>
+                
+                <h3>Retail Transformation</h3>
+                <p>When a national retail chain needed to revamp their packaging strategy, they turned to HPI for a comprehensive solution. We worked closely with their team to understand their specific needs and developed a range of packaging options that enhanced product presentation and customer experience.</p>
+                
+                <ul>
+                    <li><strong>Challenge:</strong> Inconsistent packaging across product lines</li>
+                    <li><strong>Solution:</strong> Unified packaging design system with multiple size options</li>
+                    <li><strong>Result:</strong> 35% increase in sales and improved brand recognition</li>
+                </ul>
+                
+                <h3>Agricultural Success</h3>
+                <p>Our work with agricultural exporters demonstrates how proper packaging can open new markets and increase export opportunities. We developed specialized containers that protected fresh produce during long-distance transportation while meeting international standards.</p>
+                
+                <ul>
+                    <li><strong>Challenge:</strong> Protecting fresh produce during international shipping</li>
+                    <li><strong>Solution:</strong> Ventilated containers with moisture control technology</li>
+                    <li><strong>Result:</strong> 80% reduction in spoilage and access to new export markets</li>
+                </ul>
+                
+                <h3>What Makes These Stories Special</h3>
+                <p>These success stories share common elements that make them truly remarkable:</p>
+                
+                <ul>
+                    <li><strong>Collaboration:</strong> Close partnership between our teams and client organizations</li>
+                    <li><strong>Innovation:</strong> Custom solutions developed to address specific challenges</li>
+                    <li><strong>Quality:</strong> Consistent delivery of high-quality packaging solutions</li>
+                    <li><strong>Results:</strong> Measurable improvements in business performance</li>
+                </ul>
+                
+                <h3>Our Commitment to Success</h3>
+                <p>At HPI, we believe that our success is measured by our clients' success. Every partnership is an opportunity to demonstrate our commitment to excellence, innovation, and customer satisfaction. We are proud to be part of these success stories and look forward to creating many more in the future.</p>
+                
+                <p>These stories represent just a fraction of the successful partnerships we've built over the years. Each client brings unique challenges and opportunities, and we are committed to providing solutions that drive real business results.</p>
+            </div>
+            
+            <div class="article-footer">
+                <a href="blog.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i> Back to Blog
+                </a>
+                <div class="share-buttons">
+                    <span>Share this article:</span>
+                    <a href="#" class="share-btn"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="share-btn"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="share-btn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <div class="footer-logo-col">
+                <img src="HPI(IMAGES)/logofinal.jpg" alt="Company Logo" class="footer-logo">
+                <p class="footer-desc">Your trusted partner for quality and innovation in packaging solutions. We deliver excellence with every product.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="$">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Building No: F-2</li>
+                    <li>Abhisek Estate-1 </li>
+                    <li>Haripura, Near Asarwa Bridge</li>
+                    <li>Ahmedabad, Gujarat</li>
+                    <li>380016</li>
+                    <li>+91 92272 08586</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hindustan Packaging Pvt. Ltd. All rights reserved.</p>
+        </div>
     </footer>
+
+    <a href="https://wa.me/919227208586" class="whatsapp-button" target="_blank" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+
+    <script src="js/menu.js"></script>
+    <script>
+        // Dropdown accessibility and mobile toggle
+        const dropbtn = document.querySelector('.dropbtn');
+        const dropdownContent = document.querySelector('.dropdown-content');
+        if (dropbtn && dropdownContent) {
+            dropbtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const expanded = dropbtn.getAttribute('aria-expanded') === 'true';
+                dropbtn.setAttribute('aria-expanded', !expanded);
+                dropdownContent.classList.toggle('show');
+            });
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!dropdownContent.contains(e.target) && !dropbtn.contains(e.target)) {
+                    dropdownContent.classList.remove('show');
+                    dropbtn.setAttribute('aria-expanded', 'false');
+                }
+            });
+            // Close dropdown on link click (mobile)
+            dropdownContent.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function() {
+                    dropdownContent.classList.remove('show');
+                    dropbtn.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+        // Back to Top button functionality
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        backToTop.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html> 

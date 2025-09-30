@@ -13,26 +13,44 @@
 <body>
     <header>
         <div class="logo">
-            <img src="HPI(IMAGES)/Logo.jpg" alt="Hindustan Packaging Logo">
+            <img src="HPI(IMAGES)/logofinal.jpg" alt="Hindustan Packaging Logo">
         </div>
         <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li class="dropdown">
+                    <a href="products.html" class="dropbtn">Products</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">PET CONTAINERS</a></li>
+                        <li><a href="#">PET HINGED BOXES</a></li>
+                        <li><a href="#">PET BAKERY PRODUCTS</a></li>
+                        <li><a href="#">PET PUNNETS</a></li>
+                        <li><a href="#">SAUCE CONTAINERS</a></li>
+                        <li><a href="#">CONTAINERS</a></li>
+                        <li><a href="#">RECTANGULAR CONTAINERS</a></li>
+                        <li><a href="#">MEAL BOXES</a></li>
+                        <li><a href="#">LIDS</a></li>
+                        <li><a href="#">PRINTED GLASSES</a></li>
+                        <li><a href="#">Cornstarch Product’s</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
     </header>
     
-    <section class="banner" style="background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+    <section class="banner">
+        <video class="banner-video" src="https://sdgorakhpur.com/wp-content/uploads/2024/12/Food.mp4" autoplay muted loop playsinline poster="HPI(IMAGES)/Logo.jpg"></video>
+        <div class="banner-overlay"></div>
         <div class="banner-content">
-            <h1>Welcome to Hindustan Pack-Plast Industries</h1>
-            <p>Your trusted partner in innovative packaging solutions</p>
-            <a href="products.html" class="btn">Explore Our Products</a>
-        </div>
+            <h1><br>Welcome to Hindustan Pack-Plast Industries</br></h1>
+            <p id="typewriter"></p>
+        <a href="products.html" class="btn">Explore Our Products</a>
+    </div>
     </section>
 
     <section class="about">
@@ -91,8 +109,45 @@
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Hindustan Packaging Pvt. Ltd. All rights reserved.</p>
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <div class="footer-logo-col">
+                <img src="HPI(IMAGES)/logofinal.jpg" alt="Company Logo" class="footer-logo">
+                <p class="footer-desc">Your trusted partner for quality and innovation in packaging solutions. We deliver excellence with every product.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="$">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Building No: F-2</li>
+                    <li>Abhisek Estate-1 </li>
+                    <li>Haripura, Near Asarwa Bridge</li>
+                    <li>Ahmedabad, Gujarat</li>
+                    <li>380016</li>
+                    <li>+91 92272 08586</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hindustan Packaging Pvt. Ltd. All rights reserved. | Designed and Developed by GHOST LLP.</p>
+        </div>
     </footer>
 
     <a href="https://wa.me/919227208586" class="whatsapp-button" target="_blank">
@@ -101,6 +156,51 @@
 
     <a href="#" class="back-to-top" id="backToTop">↑</a>
 
+    <script>
+        const text = "Your trusted partner in innovative packaging solutions";
+        const typingSpeed = 100;
+        const erasingSpeed = 50;
+        const delayBeforeErase = 2000;
+        const delayBeforeType = 1000;
+
+        let i = 0;
+        let isDeleting = false;
+        let el;
+
+        function typeWriter() {
+            if (!isDeleting && i <= text.length) {
+                el.textContent = text.substring(0, i);
+                i++;
+                if (i === text.length + 1) {
+                    setTimeout(() => {
+                        isDeleting = true;
+                        i = text.length - 1;
+                        typeWriter();
+                    }, delayBeforeErase);
+                } else {
+                    setTimeout(typeWriter, typingSpeed);
+                }
+            } else if (isDeleting && i >= 0) {
+                el.textContent = text.substring(0, i);
+                i--;
+                if (i < 0) {
+                    setTimeout(() => {
+                        isDeleting = false;
+                        i = 1;
+                        typeWriter();
+                    }, delayBeforeType);
+                } else {
+                    setTimeout(typeWriter, erasingSpeed);
+                }
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            el = document.getElementById("typewriter");
+            i = 1;
+            typeWriter();
+        });
+    </script>
     <script>
     // Counter Animation
     function animateCounter(counter) {
@@ -180,6 +280,7 @@
             checkVisibility(); // Initial check
         });
     </script>
+    <script src="js/layout.js"></script>
     <script src="js/menu.js"></script>
 </body>
 </html>

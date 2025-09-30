@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Hindustan Packaging Pvt. Ltd.</title>
+    <title>Products - Hindustan Pack-Plast Industries</title>
     <link rel="stylesheet" href="css/products.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,138 +13,350 @@
 <body>
     <header>
         <div class="logo">
-            <img src="HPI(IMAGES)/Logo.jpg" alt="Hindustan Packaging Logo">
+            <img src="HPI(IMAGES)/logofinal.jpg" alt="Hindustan Packaging Logo">
         </div>
         <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn" aria-haspopup="true" aria-expanded="false" aria-controls="products-dropdown">Products</button>
+                    <ul class="dropdown-content" id="products-dropdown" aria-label="submenu">
+                        <li><a href="products.html#pet-containers">PET CONTAINERS</a></li>
+                        <li><a href="products.html#pet-hinged-boxes">PET HINGED BOXES</a></li>
+                        <li><a href="products.html#pet-bakery-products">PET BAKERY PRODUCTS</a></li>
+                        <li><a href="products.html#pet-punnets">PET PUNNETS</a></li>
+                        <li><a href="products.html#sauce-containers">SAUCE CONTAINERS</a></li>
+                        <li><a href="products.html#containers">CONTAINERS</a></li>
+                        <li><a href="products.html#rectangular-containers">RECTANGULAR CONTAINERS</a></li>
+                        <li><a href="products.html#meal-boxes">MEAL BOXES</a></li>
+                        <li><a href="products.html#lids">LIDS</a></li>
+                        <li><a href="products.html#printed-glasses">PRINTED GLASSES</a></li>
+                        <li><a href="products.html#cornstarch-products">Cornstarch Product’s</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="products-hero">
-        <h1>Our Products</h1>
-        <p>Discover our wide range of high-quality packaging solutions</p>
+    <section class="banner" style="height: 320px; min-height: 220px;">
+        <div class="banner-content">
+            <h1>Our Products</h1>
+            <p>Explore our wide range of high-quality packaging solutions</p>
+        </div>
     </section>
 
-    <section class="product-categories">
-        <div class="category">
-            <h2>Food Containers</h2>
-            <div class="product-grid">
-                <div class="product-item">
-                    <img src="HPI(IMAGES)/1385,1393.JPG" alt="Food Container 1">
-                    <div class="product-info">
-                        <h4>Pet Round Containers</h4>
-                        <p>Perfect for food storage and transportation</p>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <img src="HPI(IMAGES)/1395.jpg" alt="Food Container 2">
-                    <div class="product-info">
-                        <h4>Stackable Container</h4>
-                        <p>Space-efficient storage solution</p>
-                    </div>
+    <section id="pet-containers" class="about">
+        <h2>PET CONTAINERS</h2>
+        <p>Pet Round & Square Containers</p>
+        <ul>
+            <li>High-quality PET material</li>
+            <li>Available in various sizes and shapes</li>
+            <li>Crystal clear for product visibility</li>
+            <li>Leak-proof and food safe</li>
+        </ul>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="HPI(IMAGES)/1316,17,18,19,20,.JPG" alt="PET Round Container">
+                <div class="product-info">
+                    <h4>Round PET Container</h4>
+                    <p>Perfect for food storage and takeaway.</p>
                 </div>
             </div>
-        </div>
-
-        <div class="category">
-            <h2>Takeaway Boxes</h2>
-            <div class="product-grid">
-                <div class="product-item">
-                    <img src="HPI(IMAGES)/1415.jpg" alt="Takeaway Box 1">
-                    <div class="product-info">
-                        <h4>PET Round and Rectangular Hinged Box</h4>
-                        <p>Leak-proof and durable</p>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <img src="HPI(IMAGES)/5602,03.JPG" alt="Takeaway Box 2">
-                    <div class="product-info">
-                        <h4>Compartment Box</h4>
-                        <p>Multiple sections for different food items</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="category">
-            <h2>Beverage Containers</h2>
-            <div class="product-grid">
-                <div class="product-item">
-                    <img src="HPI(IMAGES)/PP PRINTED GLASSES.JPG" alt="Beverage Container 1">
-                    <div class="product-info">
-                        <h4>Printed Plastic Cups</h4>
-                        <p>Reusable and eco-friendly</p>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <img src="HPI(IMAGES)/1106,1107.JPG" alt="Beverage Container 2">
-                    <div class="product-info">
-                        <h4>Juice Container</h4>
-                        <p>Perfect for cold beverages</p>
-                    </div>
+            <div class="product-item">
+                <img src="HPI(IMAGES)/5572.JPG" alt="PET Square Container">
+                <div class="product-info">
+                    <h4>Square PET Container</h4>
+                    <p>Ideal for packaging and display.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="product-features">
-        <h2>Why Choose Our Products?</h2>
-        <div class="features-grid">
-            <div class="feature">
-                <h3>Quality Assured</h3>
-                <p>All our products meet international quality standards</p>
+    <section id="pet-hinged-boxes" class="about">
+        <h2>PET HINGED BOXES</h2>
+        <p>Pet Round & Rectangular Hinged Boxes</p>
+        <ul>
+            <li>Secure hinged lids for convenience</li>
+            <li>Available in round and rectangular shapes</li>
+            <li>Ideal for bakery and takeaway</li>
+        </ul>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="HPI(IMAGES)/1415.jpg" alt="PET Hinged Box">
+                <div class="product-info">
+                    <h4>Round PET Hinged Box</h4>
+                    <p>Leak-proof and easy to use.</p>
+                </div>
             </div>
-            <div class="feature">
-                <h3>Eco-Friendly</h3>
-                <p>Made from recyclable materials</p>
-            </div>
-            <div class="feature">
-                <h3>Customizable</h3>
-                <p>Available in various sizes and designs</p>
-            </div>
-            <div class="feature">
-                <h3>Durable</h3>
-                <p>Built to last with premium materials</p>
+            <div class="product-item">
+                <img src="HPI(IMAGES)/5602,03.JPG" alt="PET Rectangular Hinged Box">
+                <div class="product-info">
+                    <h4>Rectangular PET Hinged Box</h4>
+                    <p>Perfect for bakery and food delivery.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Hindustan Packaging Pvt. Ltd. All rights reserved.</p>
+    <section id="pet-bakery-products" class="about">
+        <h2>PET BAKERY PRODUCTS</h2>
+        <p>Pet Rectangular Bakery Products</p>
+        <ul>
+            <li>Specially designed for bakery items</li>
+            <li>Crystal clear for product display</li>
+            <li>Durable and food safe</li>
+        </ul>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="HPI(IMAGES)/1385,1393.JPG" alt="Bakery Product 1">
+                <div class="product-info">
+                    <h4>Bakery Container</h4>
+                    <p>Showcase and protect your baked goods.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pet-punnets" class="about">
+        <h2>PET PUNNETS</h2>
+        <p>Pet Fruit Punnets</p>
+        <ul>
+            <li>Ideal for fresh produce and fruits</li>
+            <li>Ventilated for freshness</li>
+            <li>Available in multiple sizes</li>
+        </ul>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="HPI(IMAGES)/1395.jpg" alt="PET Punnet">
+                <div class="product-info">
+                    <h4>Fruit Punnet</h4>
+                    <p>Preserve and display fresh produce.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sauce-containers" class="about">
+        <h2>SAUCE CONTAINERS</h2>
+        <p>PP – Round, PET – Oval & Square Sauce Containers</p>
+        <ul>
+            <li>Perfect for sauces and condiments</li>
+            <li>Leak-proof and easy to seal</li>
+            <li>Available in various shapes</li>
+        </ul>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="HPI(IMAGES)/1415.jpg" alt="Sauce Container">
+                <div class="product-info">
+                    <h4>Round Sauce Container</h4>
+                    <p>Ideal for dips and dressings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="containers" class="about">
+        <h2>CONTAINERS</h2>
+        <p>PP Round & FB Containers</p>
+        <ul>
+            <li>Multi-purpose containers for food storage</li>
+            <li>Durable and reusable</li>
+            <li>Available in round and FB shapes</li>
+        </ul>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="HPI(IMAGES)/1395.jpg" alt="PP Round Container">
+                <div class="product-info">
+                    <h4>PP Round Container</h4>
+                    <p>Great for food storage and delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rectangular-containers" class="about">
+        <h2>RECTANGULAR CONTAINERS</h2>
+        <p>PP Rectangular Compartmental containers</p>
+        <ul>
+            <li>Compartmental design for meal separation</li>
+            <li>Ideal for meal boxes and combos</li>
+            <li>Leak-proof and sturdy</li>
+        </ul>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="HPI(IMAGES)/5602,03.JPG" alt="Rectangular Container">
+                <div class="product-info">
+                    <h4>Compartmental Container</h4>
+                    <p>Perfect for meal combos and takeaways.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="meal-boxes" class="about">
+        <h2>MEAL BOXES</h2>
+        <p>PP Meal Boxes & Hinged Boxes</p>
+        <ul>
+            <li>Perfect for meal packaging and delivery</li>
+            <li>Hinged design for convenience</li>
+            <li>Available in various sizes</li>
+        </ul>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="HPI(IMAGES)/1415.jpg" alt="Meal Box">
+                <div class="product-info">
+                    <h4>Meal Box</h4>
+                    <p>Secure and convenient for food delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lids" class="about">
+        <h2>LIDS</h2>
+        <p>Pet & PS Lids for Cups</p>
+        <ul>
+            <li>Compatible with various containers and cups</li>
+            <li>Secure fit to prevent spills</li>
+            <li>Crystal clear and durable</li>
+        </ul>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="HPI(IMAGES)/1395.jpg" alt="Lid">
+                <div class="product-info">
+                    <h4>Container Lid</h4>
+                    <p>Perfect fit for cups and containers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="printed-glasses" class="about">
+        <h2>PRINTED GLASSES</h2>
+        <p>PET & PP Customized Printed Glasses</p>
+        <ul>
+            <li>Custom printing for branding</li>
+            <li>Available in PET and PP materials</li>
+            <li>Reusable and eco-friendly</li>
+        </ul>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="HPI(IMAGES)/PP PRINTED GLASSES.JPG" alt="Printed Glass">
+                <div class="product-info">
+                    <h4>Printed Glass</h4>
+                    <p>Showcase your brand with custom prints.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cornstarch-products" class="about">
+        <h2>Cornstarch Product’s</h2>
+        <p>Premium Quality Cornstarch Products</p>
+        <ul>
+            <li>Eco-friendly and compostable</li>
+            <li>High quality and durable</li>
+            <li>Available in various shapes and sizes</li>
+        </ul>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="HPI(IMAGES)/1395.jpg" alt="Cornstarch Product">
+                <div class="product-info">
+                    <h4>Cornstarch Container</h4>
+                    <p>Compostable and sustainable packaging.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <div class="footer-logo-col">
+                <img src="HPI(IMAGES)/logofinal.jpg" alt="Company Logo" class="footer-logo">
+                <p class="footer-desc">Your trusted partner for quality and innovation in packaging solutions. We deliver excellence with every product.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#" aria-label="Careers (coming soon)">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" aria-label="Privacy Policy (coming soon)">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Building No: F-2</li>
+                    <li>Abhisek Estate-1 </li>
+                    <li>Haripura, Near Asarwa Bridge</li>
+                    <li>Ahmedabad, Gujarat</li>
+                    <li>380016</li>
+                    <li><a href="tel:+919227208586" aria-label="Call us">+91 92272 08586</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hindustan Packaging Pvt. Ltd. All rights reserved.</p>
+        </div>
     </footer>
-
-    <a href="https://wa.me/919426449619" class="whatsapp-button" target="_blank">
+    <a href="https://wa.me/919227208586" class="whatsapp-button" target="_blank" aria-label="Chat with us on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
-
-    <a href="#" class="back-to-top" id="backToTop">↑</a>
-
-    <script>
-        // Back to Top Button
-        const backToTopButton = document.getElementById('backToTop');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.add('visible');
-            } else {
-                backToTopButton.classList.remove('visible');
-            }
-        });
-
-        backToTopButton.addEventListener('click', (e) => {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
     <script src="js/menu.js"></script>
+    <script>
+// Dropdown accessibility and mobile toggle
+const dropbtn = document.querySelector('.dropbtn');
+const dropdownContent = document.querySelector('.dropdown-content');
+if (dropbtn && dropdownContent) {
+    dropbtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const expanded = dropbtn.getAttribute('aria-expanded') === 'true';
+        dropbtn.setAttribute('aria-expanded', !expanded);
+        dropdownContent.classList.toggle('show');
+    });
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!dropdownContent.contains(e.target) && !dropbtn.contains(e.target)) {
+            dropdownContent.classList.remove('show');
+            dropbtn.setAttribute('aria-expanded', 'false');
+        }
+    });
+    // Close dropdown on link click (mobile)
+    dropdownContent.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function() {
+            dropdownContent.classList.remove('show');
+            dropbtn.setAttribute('aria-expanded', 'false');
+        });
+    });
+}
+// Back to Top button functionality
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+        backToTop.classList.add('visible');
+    } else {
+        backToTop.classList.remove('visible');
+    }
+});
+backToTop.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
 </body>
 </html> 
