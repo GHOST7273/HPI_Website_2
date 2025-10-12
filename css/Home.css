@@ -748,6 +748,7 @@ nav ul li.dropdown:focus-within > .dropdown-content {
 /* Mobile Dropdown */
 @media (max-width: 768px) {
     nav ul li .dropdown-content {
+        color :#fff;
         position: static;
         min-width: 100vw;
         box-shadow: none;
@@ -761,10 +762,15 @@ nav ul li.dropdown:focus-within > .dropdown-content {
         color: #fff;
         padding: 14px 0 14px 24px;
         font-size: 18px;
+        
     }
     nav ul li .dropdown-content li a:hover {
         background: #f7b500;
-        color: #0a3d91;
+        color: #fff;
+    }
+
+    nav ul li .dropbtn::after {
+        color: #fff;
     }
 }
   
