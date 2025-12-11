@@ -279,77 +279,120 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 /* Clients Section */
-.clients-header {
-    max-width: 800px;
-    margin: 0 auto 32px auto;
+.client-showcase {
+    background: #f7fafd;
+    border-radius: 32px;
+    box-shadow: 0 8px 40px rgba(26,35,64,0.12);
+    border: 1.5px solid #e9f0fa;
+    margin-bottom: 56px;
+    padding: 60px 40px;
+    backdrop-filter: blur(2px);
+}
+.client-showcase h3 {
+    font-size: 32px;
+    margin-bottom: 48px;
+    color: #0a3d91;
+    font-weight: 900;
+    letter-spacing: 1.2px;
     text-align: center;
 }
-.clients-grid {
+
+.client-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .client-card {
-    display: block;
-    padding: 26px 22px;
-    background: linear-gradient(180deg, #ffffff 0%, #f5f8ff 100%);
+    background: #fff;
     border-radius: 20px;
-    box-shadow: 0 6px 28px rgba(26,35,64,0.10);
-    border: 1px solid #e3eaf8;
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-    position: relative;
-    overflow: hidden;
+    padding: 40px 32px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(26,35,64,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #e9f0fa;
+    animation: slideInUp 0.8s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
 }
-.client-card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(120% 120% at 30% 20%, rgba(10,61,145,0.08), transparent 50%);
-    pointer-events: none;
+
+.client-card:nth-child(1) { animation-delay: 0.1s; }
+.client-card:nth-child(2) { animation-delay: 0.2s; }
+.client-card:nth-child(3) { animation-delay: 0.3s; }
+.client-card:nth-child(4) { animation-delay: 0.4s; }
+.client-card:nth-child(5) { animation-delay: 0.5s; }
+.client-card:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .client-card:hover {
-    transform: translateY(-6px) scale(1.01);
-    box-shadow: 0 12px 36px rgba(26,35,64,0.18);
-    border-color: #c9d7f2;
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(26,35,64,0.15);
 }
-.client-card h3 {
-    font-family: 'Poppins', 'Inter', 'Segoe UI', Arial, sans-serif;
-    margin: 12px 0 10px 0;
-    color: #0a3d91;
+.client-card:hover .client-logo {
+    transform: scale(1.1);
+    box-shadow: 0 12px 28px rgba(26,35,64,0.20);
+}
+.client-logo {
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px auto;
+    box-shadow: 0 4px 16px rgba(26,35,64,0.10);
+    border: 2px solid #e9f0fa;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+.client-logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(26,35,64,0.15);
+}
+.client-logo img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.client-card h4 {
     font-size: 22px;
-    font-weight: 800;
-}
-.client-chip {
-    display: inline-flex;
-    align-items: center;
-    padding: 8px 14px;
-    background: #0a3d91;
-    color: #fff;
-    border-radius: 999px;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 0.4px;
-    box-shadow: 0 2px 12px rgba(10,61,145,0.25);
-}
-.client-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
     color: #0a3d91;
     font-weight: 700;
-    margin-top: 14px;
-    font-size: 15px;
+    margin-bottom: 16px;
 }
-.client-link::after {
-    content: "›";
+.client-card p {
     font-size: 16px;
-    transition: transform 0.2s ease;
+    color: #1a2340;
+    line-height: 1.6;
 }
-.client-card:hover .client-link::after {
-    transform: translateX(4px);
-}
+
+
 
 .stats-container {
     display: grid;
