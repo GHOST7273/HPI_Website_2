@@ -77,7 +77,7 @@
 
     <section class="about">
         <h2>About Us</h2>
-        <p>Hindustan Packaging Industries is a leading manufacturer and trader of high-quality plastic packaging solutions, serving both domestic and international markets. With over two decades of experience, we are committed to delivering innovative and sustainable packaging solutions that meet the highest industry standards.</p>
+        <p>Hindustan Packaging Industries is a leading manufacturer and trader of high-quality plastic packaging solutions, serving PAN India. With over 30+ years of industry experience, we are committed to delivering innovative and sustainable packaging solutions that meet the highest industry standards.</p>
         <a href="about.html" class="btn">Learn More</a>
     </section>
 
@@ -92,7 +92,7 @@
                 </div>
             </div>
             <div class="product-item">
-                <img src="HPI(IMAGES)/5572.webp" alt="Takeaway Boxes">
+                <img src="HPI(IMAGES)/1111 (2).webp" alt="Takeaway Boxes">
                 <div class="product-info">
                     <h4>Takeaway Boxes</h4>
                     <p>Durable and leak-proof containers for food delivery</p>
@@ -188,7 +188,7 @@
         <div class="stats-container">
             <div class="stat-box">
                 <span class="counter" data-target="500">0+</span>
-                <p>Domestic Channel Partners</p>
+                <p>Total Products</p>
             </div>
             <div class="stat-box">
                 <span class="counter" data-target="32">0+</span>
@@ -199,13 +199,20 @@
                 <p>Factory Employees</p>
             </div>
             <div class="stat-box">
-                <span class="counter" data-target="500">0+</span>
-                <p>Total Products</p>
+                <span class="counter" data-target="5" data-suffix="L+">0+</span>
+                <p>Products Sold</p>
             </div>
         </div>
     </section>
 
     <footer class="custom-footer">
+        <div class="footer-map-col">
+                <h3>Find Us</h3>
+                <div class="footer-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1835.7349626975397!2d72.59990724381443!3d23.043227196651955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84198709c377%3A0x871a200ecc6d008e!2sHindustan%20Packaging%20Industries!5e0!3m2!1sen!2sin!4v1746525022548!5m2!1sen!2sin"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        </div>
         <div class="footer-container">
             <div class="footer-logo-col">
                 <img src="HPI(IMAGES)/logofinal.webp" alt="Company Logo" class="footer-logo">
@@ -240,13 +247,7 @@
 
                 </ul>
             </div>
-            <div class="footer-map-col">
-                <h3>Find Us</h3>
-                <div class="footer-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1835.7349626975397!2d72.59990724381443!3d23.043227196651955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84198709c377%3A0x871a200ecc6d008e!2sHindustan%20Packaging%20Industries!5e0!3m2!1sen!2sin!4v1746525022548!5m2!1sen!2sin"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
+            
         </div>
         <div class="footer-bottom">
             <p>&copy; 2025 Hindustan Packaging Pvt. Ltd. All rights reserved. | Designed and Developed by GHOST LLP.</p>
@@ -333,18 +334,21 @@
     // Counter Animation
     function animateCounter(counter) {
         let target = +counter.getAttribute('data-target');
+        let customSuffix = counter.getAttribute('data-suffix'); // L+ or null
+        let suffix = customSuffix ? customSuffix : "+"; // default +
+
         let count = 0;
         let increment = target / 100;
 
-        function updateCounter() {
-            if (count < target) {
-                count += increment;
-                counter.innerText = Math.ceil(count);
-                setTimeout(updateCounter, 20);
-            } else {
-                counter.innerText = target + "+";
-            }
+    function updateCounter() {
+        if (count < target) {
+            count += increment;
+            counter.innerText = Math.ceil(count) + suffix;
+            setTimeout(updateCounter, 20);
+        } else {
+            counter.innerText = target + suffix;
         }
+    }
 
         updateCounter();
     }
